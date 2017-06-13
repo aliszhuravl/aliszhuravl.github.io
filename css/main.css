@@ -2085,6 +2085,9 @@ html.fp-enabled,
   #fp-nav {
     display: none;
   }
+  #myMenu {
+    display: none;
+  }
 }
 
 .hamburger {
@@ -3481,7 +3484,7 @@ html.fp-enabled,
           transform: translate3d(0, 0, 0);
   -webkit-animation: l-bars 2s linear infinite alternate;
           animation: l-bars 2s linear infinite alternate; 
-  background: #5f3f3f;
+  background: #acd473;
   background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white);
   background-repeat: no-repeat;
   background-position: calc(50% - 30px) 50%, calc(50% - 20px) 50%, calc(50% - 10px) 50%, 50% 50%, calc(50% + 10px) 50%, calc(50% + 20px) 50%, calc(50% + 30px) 50%;
@@ -3763,7 +3766,7 @@ html.fp-enabled,
 }
 
 .logo_color {
-  background: url("../img/logo.jpg") no-repeat;
+  background: url("../img/logo.png") no-repeat;
   background-size: cover;
 }
 
