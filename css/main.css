@@ -861,6 +861,9 @@ h4 {
 .dark-gray {
 	height: 426px;
 	background-color: #3b3b3b;
+}
+
+.page-main .dark-gray {
 	background-image: url('../img/footer-cover.png');
 	background-repeat: no-repeat;
 	background-position: center;
