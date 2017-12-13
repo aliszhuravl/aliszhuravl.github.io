@@ -1717,10 +1717,36 @@ a.tile__item:hover:after {
 
 .gray_item {
 	position: relative;
+	height: 100%;
+}
+
+.gray_item:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.gray_item:hover:after {
+	z-index: 9;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	opacity: .6;
+	background-color: transparent;
+	background-image: url('../img/svg/polygray.svg');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .gray_item__good {
 	position: absolute;
+	z-index: 11;
 	top: 0;
 	left: 0;
 	display: -webkit-box;
@@ -1741,6 +1767,16 @@ a.tile__item:hover:after {
 	align-items: flex-start;
 }
 
+.gray_item__good .good_img {
+	position: absolute;
+	z-index: 11;
+	bottom: 0;
+	left: 50%;
+	max-height: 230px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
 .gray_item__good .tile__title {
 	font-family: 'DinProMedium', 'Arial', serif;
 	-webkit-filter: invert(100%);
@@ -1750,6 +1786,10 @@ a.tile__item:hover:after {
 .gray_item__good .labels {
 	-ms-flex-item-align: end;
 	align-self: flex-end;
+}
+
+.gray_item img {
+	height: 100%;
 }
 
 .no-hover:after {
@@ -1923,6 +1963,10 @@ a.tile__item:hover:after {
 	height: auto;
 	padding: 0;
 	border: none;
+}
+
+.no-padding {
+	padding: 0 !important;
 }
 
 .white-gray {
@@ -2176,7 +2220,7 @@ a.tile__item:hover:after {
 }
 
 .section-about {
-	height: 390px;
+	height: 387px;
 	background-image: -webkit-gradient(linear, left top, right top, color-stop(70%, transparent), color-stop(30%, #fff));
 	background-image: linear-gradient(90deg, transparent 70%, #fff 30%);
 }
@@ -2807,6 +2851,10 @@ a.tile__item:hover:after {
 
 .special_boots {
 	background-image: url('../img/heads/boots.png');
+}
+
+.high-works {
+	background-image: url('../img/heads/high.png');
 }
 
 .catalog {
