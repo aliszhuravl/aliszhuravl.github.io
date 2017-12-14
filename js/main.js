@@ -96,7 +96,7 @@ function initMap() {
         map1 = new google.maps.Map(document.getElementById('map1'), {
             center: {lat: 55.672288, lng: 37.848493},
             zoom: 14,
-            zoomControl: false,
+            zoomControl: true,
             mapTypeControl: false,
             streetViewControl: false,
             scrollwheel: false
@@ -250,6 +250,19 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#novgorod").click(function () {
         $(".popn").addClass('visible_popup');
+        $("body").addClass('stop');
+    });
+
+    $(".cross-pop").click(function () {
+        $(".popup_wrapper").removeClass('visible_popup');
+        $("body").removeClass('stop');
+    });
+
+});
+
+$(document).ready(function() {
+    $("#open-job").click(function () {
+        $(".popv").addClass('visible_popup');
         $("body").addClass('stop');
     });
 
