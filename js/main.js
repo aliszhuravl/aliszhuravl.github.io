@@ -99,7 +99,7 @@ function initMap() {
             zoomControl: true,
             mapTypeControl: false,
             streetViewControl: false,
-            scrollwheel: false
+            scrollwheel: true
         });
 
         google.maps.event.addDomListener(window, 'resize', function () {
@@ -193,6 +193,7 @@ $(document).ready(function() {
     $('.slider_for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        fade: true,
         arrows: false,
         asNavFor: '.slider_nav'
     });
@@ -359,7 +360,9 @@ $('.dd_menu').each(function () {
     // Cache the number of options
     var $dropdown = $(this),
         $dropdowns = $('.dd_menu').not(this),
-        $dropdownList = $dropdown.find('.dropdown__list')
+        $dropdownList = $dropdown.find('.dropdown__list'),
+        $dropdownText = $dropdown.find('.dropdown__text'),
+        $dropdownListItems = $dropdown.find('.dropdown__item');
 
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
     $dropdown.on('mouseover', function(e) {
@@ -368,19 +371,30 @@ $('.dd_menu').each(function () {
         $dropdowns.find('.dropdown__list').fadeOut(250);
 
         if ($dropdown.hasClass('dropdown_opened')) {
-            //$dropdown.removeClass('dropdown_opened');
-            //$dropdown.find('.dropdown__list').slideUp(250);
+            // $dropdown.removeClass('dropdown_opened');
+            // $dropdown.find('.dropdown__list').fadeOut(250);
         } else {
             $dropdown.addClass('dropdown_opened');
-            $dropdown.find('.dropdown__list').css('display', 'flex');
+            $dropdown.find('.dropdown__list').css('display', 'flex').addClass('dl_open');
         }
     });
 
+    // $dropdown.on('mouseout', function() {
+    //     if ($dropdownList.hasClass('dl_open')) {
+    //             $dropdown.find('.dropdown__list').css('display', 'flex');
+    //         }
+    //     $dropdownList.on('mouseout', function() {
+    //         $dropdown.removeClass('dropdown_opened');
+    //         $dropdownList.fadeOut(250).removeClass('dl_open');
+    //     });
+    // });
+
     // Hides the unordered list when clicking outside of it
-    $(document.body).click( function() {
+    $(document.body).click(function() {
         $dropdown.removeClass('dropdown_opened');
-        $dropdownList.slideUp(150);
+        $dropdownList.fadeOut(250);
     });
+
 });
 
 $('.dd_filter').each(function () {

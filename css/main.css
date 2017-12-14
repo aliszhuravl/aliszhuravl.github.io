@@ -876,7 +876,7 @@ h4 {
 .page-main .dark-gray {
 	background-image: url('../img/footer-cover.png');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center -1px;
 	background-size: cover;
 }
 
@@ -1164,6 +1164,10 @@ h4 {
 	font-size: 12px;
 	width: auto;
 	border-bottom: 1px dotted #656565;
+}
+
+.link_active {
+	color: #ee5655 !important;
 }
 
 .layout-inner,
@@ -1495,7 +1499,7 @@ h4 {
 }
 
 .disabled {
-	color: #9f9f9f;
+	color: #9f9f9f !important;
 }
 
 .tile {
@@ -2128,7 +2132,7 @@ a.tile__item:hover:after {
 .map_block {
 	position: relative;
 	width: 100%;
-	height: 425px;
+	height: 424px;
 }
 
 .map {
@@ -4775,6 +4779,10 @@ ol li::before {
 
 .about_head h3 {
 	margin-bottom: 0;
+}
+
+.tile_part .tile__item {
+	cursor: default;
 }
 
 .hw-fone {
