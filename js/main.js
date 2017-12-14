@@ -354,11 +354,40 @@ $(document).ready(function() {
     })(jQuery);
 
 });
-$('.dropdown').each(function () {
+$('.dd_menu').each(function () {
 
     // Cache the number of options
     var $dropdown = $(this),
-        $dropdowns = $('.dropdown').not(this),
+        $dropdowns = $('.dd_menu').not(this),
+        $dropdownList = $dropdown.find('.dropdown__list')
+
+    // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+    $dropdown.on('mouseover', function(e) {
+        e.stopPropagation();
+        $dropdowns.removeClass('dropdown_opened');
+        $dropdowns.find('.dropdown__list').fadeOut(250);
+
+        if ($dropdown.hasClass('dropdown_opened')) {
+            //$dropdown.removeClass('dropdown_opened');
+            //$dropdown.find('.dropdown__list').slideUp(250);
+        } else {
+            $dropdown.addClass('dropdown_opened');
+            $dropdown.find('.dropdown__list').css('display', 'flex');
+        }
+    });
+
+    // Hides the unordered list when clicking outside of it
+    $(document.body).click( function() {
+        $dropdown.removeClass('dropdown_opened');
+        $dropdownList.slideUp(150);
+    });
+});
+
+$('.dd_filter').each(function () {
+
+    // Cache the number of options
+    var $dropdown = $(this),
+        $dropdowns = $('.dd_filter').not(this),
         $dropdownList = $dropdown.find('.dropdown__list')
 
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
