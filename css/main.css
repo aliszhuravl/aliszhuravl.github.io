@@ -2644,7 +2644,7 @@ a.tile__item:hover:after {
 }
 
 .page__submenu .list .submenu_link.sm_active {
-	font-family: 'DinProMedium', 'Arial', serif;
+	font-family: 'DinProRegular', 'Arial', serif;
 	color: #ee5655;
 }
 
@@ -3057,6 +3057,10 @@ ol.results_table__list .rtl_item:before {
 
 .search_box {
 	margin-bottom: 60px;
+}
+
+.search {
+	margin-left: 6px;
 }
 
 .docs_inner {
