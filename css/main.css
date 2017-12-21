@@ -4864,20 +4864,22 @@ ol li::before {
 .first {
 	width: 610px;
 	height: 350px;
-	background-image: url('../img/catalog/2.png');
-	background-repeat: no-repeat;
+	background: url('../img/catalog/2.png') no-repeat, url('../img/svg/polygray.png') no-repeat center;
 }
 
 .first .high-name {
 	top: 120px;
 }
 
+.first:hover {
+	background: url('../img/catalog/2.png') no-repeat, url('../img/svg/polygray-y.png') no-repeat center;
+}
+
 .second {
 	right: -40px;
 	width: 520px;
 	height: 470px;
-	background-image: url('../img/catalog/4.png');
-	background-repeat: no-repeat;
+	background: url('../img/catalog/4.png') no-repeat, url('../img/svg/polygray.png') no-repeat center;
 }
 
 .second .high-name {
@@ -4885,11 +4887,14 @@ ol li::before {
 	max-width: 240px;
 }
 
+.second:hover {
+	background: url('../img/catalog/4.png') no-repeat, url('../img/svg/polygray-y.png') no-repeat center;
+}
+
 .third {
 	width: 610px;
 	height: 520px;
-	background-image: url('../img/catalog/5.png');
-	background-repeat: no-repeat;
+	background: url('../img/catalog/5.png') no-repeat, url('../img/svg/polygray.png') no-repeat 200px 180px;
 }
 
 .third .high-name {
@@ -4897,13 +4902,16 @@ ol li::before {
 	max-width: 270px;
 }
 
+.third:hover {
+	background: url('../img/catalog/5.png') no-repeat, url('../img/svg/polygray-y.png') no-repeat 200px 180px;
+}
+
 .fourth {
 	position: relative;
 	right: 90px;
 	width: 580px;
 	height: 570px;
-	background-image: url('../img/catalog/1.png');
-	background-repeat: no-repeat;
+	background: url('../img/catalog/1.png') no-repeat, url('../img/svg/polygray.png') no-repeat 125px 151px;
 }
 
 .fourth .high-name {
@@ -4912,11 +4920,14 @@ ol li::before {
 	max-width: 200px;
 }
 
+.fourth:hover {
+	background: url('../img/catalog/1.png') no-repeat, url('../img/svg/polygray-y.png') no-repeat 125px 151px;
+}
+
 .fith {
 	width: 712px;
 	height: 835px;
-	background-image: url('../img/catalog/6.png');
-	background-repeat: no-repeat;
+	background: url('../img/catalog/6.png') no-repeat, url('../img/svg/polygray.png') no-repeat 240px top;
 }
 
 .fith .high-name {
@@ -4924,16 +4935,23 @@ ol li::before {
 	max-width: 220px;
 }
 
+.fith:hover {
+	background: url('../img/catalog/6.png') no-repeat, url('../img/svg/polygray-y.png') no-repeat 240px top;
+}
+
 .sixth {
 	width: 550px;
 	height: 500px;
-	background-image: url('../img/catalog/3.png');
-	background-repeat: no-repeat;
+	background: url('../img/catalog/3.png') no-repeat, url('../img/svg/polygray.png') no-repeat 60px 145px;
 }
 
 .sixth .high-name {
 	top: 240px;
 	max-width: 270px;
+}
+
+.sixth:hover {
+	background: url('../img/catalog/3.png') no-repeat, url('../img/svg/polygray-y.png') no-repeat 60px 145px;
 }
 
 .clearfix:before,
