@@ -699,7 +699,7 @@ h4 {
 }
 
 .dd_menu .dropdown__list {
-	top: 60px;
+	top: 48px;
 }
 
 .dd_catalog .dropdown__item {
@@ -709,7 +709,7 @@ h4 {
 }
 
 .dd_catalog .dropdown__list {
-	top: 60px;
+	top: 48px;
 	min-width: 720px;
 }
 
@@ -4858,7 +4858,11 @@ ol li::before {
 .high_item:hover h4 {
 	-webkit-transition: color .3s;
 	transition: color .3s;
-	color: #ee5655;
+	color: #313131;
+}
+
+.high_item:hover p {
+	color: #313131;
 }
 
 .first {
