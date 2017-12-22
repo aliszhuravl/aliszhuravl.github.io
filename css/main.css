@@ -2476,6 +2476,7 @@ a.tile__item:hover:after {
 	display: none;
 	float: left;
 	min-height: 1px;
+	outline: none;
 }
 
 [dir='rtl'] .slick-slide {
