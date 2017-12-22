@@ -790,6 +790,11 @@ h4 {
 	text-decoration: none;
 }
 
+.nav__link:hover,
+.dd_menu .dropdown__text:hover {
+	color: #ee5655 !important;
+}
+
 .page-container {
 	position: relative;
 	display: -webkit-box;
