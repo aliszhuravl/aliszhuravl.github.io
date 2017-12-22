@@ -937,6 +937,7 @@ h4 {
 
 .footer .tile .link_phone {
 	margin-bottom: 32px;
+	text-decoration: none;
 }
 
 .footer .tile .link_phone img {
@@ -945,6 +946,10 @@ h4 {
 }
 
 .footer .tile .link_phone p {
+	text-decoration: none;
+}
+
+.footer .tile .link_phone:hover {
 	text-decoration: none;
 }
 
@@ -1212,6 +1217,9 @@ h4 {
 	font-size: 13px;
 	position: relative;
 	display: inline-block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	height: 50px;
 	padding: 5px 18px;
 	cursor: pointer;
@@ -1228,6 +1236,9 @@ h4 {
 	background-color: #ee5655;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .btn:hover,
@@ -1235,16 +1246,16 @@ h4 {
 .btn:focus {
 	text-decoration: none;
 	outline: 0;
+	background-color: #ee5655;
 }
 
 .btn:hover,
 .btn:focus {
-	border-color: #b3b8c0;
-	background-color: #f5f7f9;
+	background-color: #ee5655;
 }
 
 .btn:active {
-	background-color: #e5eaef;
+	background-color: #ee5655;
 }
 
 .btn_disabled {
@@ -2322,6 +2333,7 @@ a.tile__item:hover:after {
 	top: 130px;
 	left: 20px;
 	cursor: pointer;
+	pointer-events: auto;
 }
 
 .btn_next {
@@ -2382,6 +2394,12 @@ a.tile__item:hover:after {
 	height: 430px;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.ban_link {
+	text-decoration: none;
+	color: #313131;
 }
 
 /* Slider */
