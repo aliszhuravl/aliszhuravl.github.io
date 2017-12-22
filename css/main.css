@@ -788,10 +788,12 @@ h4 {
 .dd_menu .dropdown__text {
 	font-family: 'DinProBold', 'Arial', serif;
 	text-decoration: none;
+	color: #ee5655;
 }
 
 .nav__link:hover,
 .dd_menu .dropdown__text:hover {
+	opacity: 1 !important;
 	color: #ee5655 !important;
 }
 
@@ -2405,6 +2407,7 @@ a.tile__item:hover:after {
 .ban_link {
 	text-decoration: none;
 	color: #313131;
+	outline: none;
 }
 
 /* Slider */
