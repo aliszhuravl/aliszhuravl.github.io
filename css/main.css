@@ -781,7 +781,7 @@ h4 {
 .nav__list li:last-child .nav__link,
 .nav__list li:last-child .dd_menu .dropdown__text,
 .dd_menu .nav__list li:last-child .dropdown__text {
-	padding-right: 0;
+	padding-right: 0 !important;
 }
 
 .nav__link,
@@ -1252,13 +1252,15 @@ h4 {
 .btn:active,
 .btn:focus {
 	text-decoration: none;
+	border-color: #cb4948;
 	outline: 0;
-	background-color: #ee5655;
+	background-color: #cb4948;
 }
 
 .btn:hover,
 .btn:focus {
-	background-color: #ee5655;
+	border-color: #cb4948;
+	background-color: #cb4948;
 }
 
 .btn:active {
@@ -1450,6 +1452,7 @@ h4 {
 }
 
 .breadcrumbs_list {
+	font-size: 14px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1547,7 +1550,7 @@ h4 {
 	margin-bottom: 32px;
 	padding: 32px;
 	text-decoration: none;
-	border: 1px solid #f6f6f6;
+	border: 1px solid #e3e3e3;
 	outline: none;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1569,7 +1572,7 @@ h4 {
 }
 
 .tile__item .sub_text {
-	color: #9f9f9f;
+	color: #656565;
 }
 
 .tile__item p {
@@ -1648,6 +1651,9 @@ a.tile__item:hover:after {
 	margin-right: 24px;
 	margin-bottom: 32px;
 	padding: 24px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	opacity: .8;
 	background-color: #f6f6f6;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -1658,6 +1664,12 @@ a.tile__item:hover:after {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+}
+
+.sub_tile__item:hover {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	opacity: 1;
 }
 
 .sub_tile__item:hover .info_buble {
@@ -2249,7 +2261,7 @@ a.tile__item:hover:after {
 }
 
 .next__gray {
-	background-color: #9f9f9f;
+	background-color: #c5c5c5;
 }
 
 .next__green {
@@ -3184,7 +3196,7 @@ ol.results_table__list .rtl_item:before {
 	font-family: 'UniSansBold', 'Arial', serif;
 	font-size: 24px;
 	line-height: 32px;
-	margin-top: 0;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -3791,6 +3803,10 @@ ol.results_table__list .rtl_item:before {
 	outline: none;
 }
 
+.slider_nav__inner .slick-current {
+	border: 1px solid #cb4948 !important;
+}
+
 .slider_for__inner {
 	position: relative;
 	display: block;
@@ -3945,6 +3961,9 @@ ol.results_table__list .rtl_item:before {
 	z-index: 9;
 	bottom: 32px;
 	left: 32px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	opacity: .4;
 }
 
 .sf_left p {
@@ -3964,6 +3983,12 @@ ol.results_table__list .rtl_item:before {
 	bottom: auto;
 	border: 10px solid transparent;
 	border-bottom: 10px solid #fff3de;
+}
+
+.sf_left:hover {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	opacity: 1;
 }
 
 .sf_left:hover .info_buble {
