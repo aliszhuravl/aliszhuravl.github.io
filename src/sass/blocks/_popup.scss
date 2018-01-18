@@ -1,0 +1,169 @@
+.popup_wrapper {
+  position: fixed;
+  background: rgba(0, 0, 0, .7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup {
+  width: 780px;
+  max-height: 900px;
+  margin-bottom: 100px;
+  background-color: $color-white;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  top: 25%;
+  z-index: 4;
+    &_inner {
+      width: 100%;
+        &__header {
+          width: 100%;
+          height: 125px;
+          padding: 45px 60px;
+          display: flex;
+          background-image: url('../img/fone-pop.jpg');
+          background-repeat: no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+            .link {
+              font-size: 24px;
+              opacity: 0.5;
+            }
+            .active_tab {
+              opacity: 1;
+              font-size: 24px;
+              font-family: $font-family_bold;
+            }
+            span {
+              opacity: 0.5;
+              font-size: 24px;
+              margin: 0 4px;
+            }
+        }
+        &__body {
+          background-color: $color_gray_light;
+            .pop_map {
+              width: 100%;
+              height: 450px;
+              margin-bottom: 40px;
+                .map_block {
+                  width: 100%;
+                  height: 450px;
+                }
+            }
+          .descr {
+              padding: 0 60px 60px 60px;
+            }
+          .way {
+            display: flex;
+            padding: 30px 60px;
+              .link {
+                opacity: 0.7;
+              }
+              .link_active {
+                opacity: 1;
+              }
+          }
+        }
+    }
+}
+
+.visible_popup {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+.stop {
+  overflow: hidden;
+}
+
+.closepop {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    //img {
+    //  width: 30px;
+    //  height: 30px;
+    //}
+}
+
+.cross-pop {
+  cursor: pointer;
+}
+
+.poph {
+  font-size: 30px;
+  margin: 0;
+}
+
+.pop-text {
+  margin-bottom: 20px;
+}
+
+.popv {
+    .popup{
+      min-height: 777px;
+      min-width: 777px;
+      width: 777px;
+      height: auto;
+      background-image: url('../img/pop2.jpg');
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: right center;
+      .popup_inner__header {
+        background-image: none;
+        flex-direction: column;
+          .condition {
+            display: flex;
+              .condition_inner {
+                margin-right: 24px;
+              }
+          }
+      }
+      .popup_inner__body {
+        position: relative;
+        padding: 45px 60px;
+        background-color: transparent;
+          ul {
+            padding-left: 20px;
+            margin-bottom: 32px;
+              li {
+                margin-bottom: 4px;
+              }
+          }
+          .question {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 60px;
+              .contact {
+                margin-top: 20px;
+                  .phone {
+                    margin-bottom: 8px;
+                  }
+                  p {
+                    color: $color_red;
+                  }
+              }
+          }
+      }
+    }
+}

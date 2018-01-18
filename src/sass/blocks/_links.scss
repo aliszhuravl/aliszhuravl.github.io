@@ -1,0 +1,59 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: all, .2s;
+  color: $color_dark;
+
+  &:hover {
+    color: $color_wine;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_black {
+  &:hover {
+    opacity: 1;
+    color: $color_dark;
+  }
+}
+
+.link_disabled {
+  color: $color_gray_dark;
+}
+
+.link_light {
+  color: $color_gray_main;
+  text-decoration: none;
+
+  &:hover {
+    color: $color_wine;
+  }
+}
+
+.link_red {
+  color: $color_red;
+  &:hover {
+    color: $color_dark;
+  }
+}
+
+.link_active {
+  font-family: $font-family_bold;
+  color: $color_dark;
+}
+
+.link_dotted {
+  border-bottom: 1px dotted $color_gray_dark;
+  font-size: 12px;
+  width: auto;
+}
+
+.link_active {
+  color: $color_red !important;
+}

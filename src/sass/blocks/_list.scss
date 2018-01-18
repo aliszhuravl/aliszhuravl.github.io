@@ -1,0 +1,49 @@
+ol.results_table__list{
+  counter-reset: myCounter;
+  padding: 0;
+  margin-bottom: 60px;
+    .rtl_item{
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+        div {
+          a {
+            margin-bottom: 8px;
+            font-family: $font-family_medium;
+          }
+        }
+    }
+    .rtl_item:before {
+      counter-increment: myCounter;
+      content:counter(myCounter)'.';
+      margin: 0 16px 0 0;
+      font-size: 16px;
+      font-family: $font-family_bold;
+    }
+}
+
+.square {
+  margin-top: 32px;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+  li {
+    list-style: none;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 10px;
+    font-family: $font-family_medium;
+    color: #000;
+    &:before {
+      width: 8px;
+      height: 8px;
+      background-color: transparent;
+      border: 1px solid $color-black;
+      content: '';
+      margin: 0 16px 0 0;
+      position: absolute;
+      left: -20px;
+      top: 8px;
+    }
+  }
+}

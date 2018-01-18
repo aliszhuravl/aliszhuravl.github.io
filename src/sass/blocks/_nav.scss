@@ -1,0 +1,33 @@
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: -12px;
+
+  & li {
+    flex: 0 1 auto;
+  }
+
+  //& li:first-child .nav__link {
+  //  padding-left: 0;
+  //}
+
+  & li:last-child .nav__link {
+    padding-right: 0 !important;
+  }
+}
+
+.nav__link {
+  @extend .link;
+  color: $color_red;
+  text-decoration: none;
+  font-family: $font-family_bold;
+    &:hover {
+      color: $color_red !important;
+      opacity: 1 !important;
+    }
+}

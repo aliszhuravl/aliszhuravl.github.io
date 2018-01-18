@@ -1,0 +1,16 @@
+.error_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+    .error {
+      color: $color_gray_middle;
+      font-size: 300px;
+      line-height: 300px;
+      font-family: $font-uni_regular;
+      opacity: 0.5;
+    }
+}

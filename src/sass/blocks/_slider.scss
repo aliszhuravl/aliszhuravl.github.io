@@ -1,0 +1,76 @@
+.slide_wear {
+  width: 100%;
+  height: 414px;
+  background-image: url('../img/goods/banner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider {
+  &__slide {
+    &_inner {
+      position: relative;
+        &_button {
+          position: absolute;
+          top: 130px;
+          left: 20px;
+          z-index: 5;
+          cursor: pointer;
+          pointer-events: auto;
+        }
+    }
+  }
+}
+
+.btn_next {
+  left: auto;
+  right: 90px;
+}
+
+.slide {
+  &__text {
+    padding-top: 40px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+      h1 {
+        line-height: 45px;
+        .sale {
+          color: $color_red;
+          font-family: $font-uni_bold;
+        }
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+      p {
+        margin-bottom: 24px;
+      }
+      .sub_text {
+        margin-bottom: 8px;
+      }
+  }
+}
+
+.banner {
+  position: relative;
+  padding-top: 12px;
+  overflow: hidden;
+    .buttons__slide_inner {
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      height: 430px;
+      transform: translateX(-50%);
+      z-index: 1;
+      pointer-events: none;
+    }
+}
+
+.ban_link {
+  color: $color_dark;
+  text-decoration: none;
+  outline: none;
+}

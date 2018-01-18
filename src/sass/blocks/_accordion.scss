@@ -1,0 +1,114 @@
+.accordion {
+  width: 100%;
+  min-width: 280px;
+  border-bottom: 1px solid #aaa;
+  border-bottom: none;
+  margin-right: 32px;
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 280px;
+}
+
+.accordion__btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 280px;
+  height: 80px;
+  border-bottom: 1px solid $color_gray_main;
+  background-color: $color_gray_light;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+  transition: all .15s;
+  cursor: default;
+  &:hover {
+    .accordion__text {
+      color: $color_red;
+      font-family: $font-family_medium;
+    }
+  }
+}
+
+.accordion__item_open {
+
+  & .accordion__btn {
+    background-color: $color_gray_light;
+    border-bottom-color: transparent;
+    .accordion__text {
+      color: $color_red;
+      font-family: $font-family_medium;
+    }
+  }
+
+  & .accordion__content {
+    display: block;
+    padding: 0;
+    background-color: $color_gray_light;
+    width: 100%;
+  }
+}
+
+.accordion__content {
+  display: none;
+  background-color: $color_gray_light;
+}
+
+.accordion__text {
+  overflow: hidden;
+  font-size: 16px;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+.count {
+  padding-right: 20px;
+  color: $color_gray_middle;
+  font-size: 12px;
+}
+
+.acc_item {
+  padding: 12px 24px;
+  margin-left: 24px;
+  font-size: 14px;
+  color: $color_gray_dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  &:before {
+    width: 12px;
+    height: 1px;
+    background-color: $color_dark;
+    content: '';
+    margin: 0 16px 0 0;
+    position: absolute;
+    left: 0;
+    top: 22px;
+  }
+  .count {
+    padding-right: 0;
+  }
+  &:hover,
+  &:active,
+  &:focus
+{
+    color: $color_red;
+    &:before {
+      background-color: $color_red;
+    }
+  }
+}
+
+.attention_text {
+  font-family: $font-family_medium;
+}
+

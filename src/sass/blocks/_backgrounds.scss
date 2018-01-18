@@ -1,0 +1,137 @@
+.white-gray {
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 50%, $color_gray_light 50%);
+  background-repeat: no-repeat;
+}
+
+.gray-white {
+  background-color: $color_gray_light;
+  background-image: linear-gradient(90deg, transparent 50%, #fff 50%);
+  background-repeat: no-repeat;
+}
+
+.corner-white {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -90px;
+  height: 100%;
+  width: 90px;
+  //background-color: #fff;
+  background-image: linear-gradient(110deg, transparent 50%, $color_gray_light 50%);
+}
+
+.bottom-corner {
+  -webkit-background-size: 100% 230px;
+  background-size: 100% 230px;
+  background-position: bottom;
+}
+
+.header {
+  .corner-white {
+    right: 90px;
+    left: auto;
+  }
+}
+
+.corner {
+  .corner-white {
+    right: 0;
+    left: auto;
+    bottom: 0;
+    top: auto;
+    height: 230px;
+  }
+}
+
+.diagonal {
+  position: relative;
+}
+
+.corner-gray {
+  right: 0;
+  left: auto;
+  bottom: 0;
+  max-height: 230px;
+  top: auto;
+}
+
+.fone_one {
+  background-image: url('../img/fone1-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1005px;
+}
+
+.fone_news {
+  background-image: url('../img/fone2.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 573px;
+}
+
+.fone_subpage {
+  background-image: url('../img/fone4.jpg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+}
+
+.gradient_fone {
+  background-image: url('../img/fone5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fone_same {
+  background-image: url('../img/fone6.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 573px;
+}
+
+.fone_prefooter {
+  background-image: url('../img/fone7.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 190px;
+}
+
+.fone_about_one {
+  background-image: url('../img/about-one.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 1005px;
+}
+
+.fone_about_two {
+  background-image: url('../img/about-two.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 774px;
+}
+
+.fone_about_three {
+  background-image: url('../img/about-three.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 617px;
+}
+
+
+@media (max-width: 1500px) {
+  .fone_news {
+    background-position: center;
+  }
+  .fone_subpage {
+    background-size: 30%;
+  }
+}

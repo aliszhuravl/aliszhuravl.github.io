@@ -1,0 +1,125 @@
+.dark-gray {
+  background-color: $color_gray_footer;
+  height: 426px;
+}
+
+.page-main {
+  .dark-gray {
+    background-image: url('../img/footer-cover.png');
+    background-repeat: no-repeat;
+    background-position: center -1px;
+    background-size: cover;
+  }
+}
+
+.footer {
+    h4 {
+      font-size: 16px;
+      font-family: $font-family;
+    }
+    .tile {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      padding-bottom: 12px;
+      &__item {
+        //max-width: 20%;
+        margin-right: 60px;
+        border: 0;
+        margin: 0;
+        height: auto !important;
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        align-items: flex-start;
+        justify-content: flex-start;
+          &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+          }
+          h4 {
+            color: $color_gray_middle;
+          }
+          .list {
+            li {
+              a {
+                color: $color_gray_main;
+                text-decoration: none;
+                font-family: $font-family_light;
+                font-size: 14px;
+                &:hover {
+                  color: $color_red;
+                }
+              }
+            }
+          }
+      }
+      .link_phone {
+        margin-bottom: 32px;
+        text-decoration: none;
+        img {
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+        p {
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+    a {
+      margin-right: 12px;
+        img {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+    }
+}
+
+.footer__bottom {
+    img {
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+    }
+  .tile {
+    padding: 0;
+    align-items: center;
+      &__item {
+        width: auto;
+          &:last-child {
+            width: 190px;
+              .link_phone {
+                margin-bottom: 0;
+              }
+          }
+      }
+  }
+  .sub_text {
+    color: $color_gray_middle;
+    opacity: 0.6;
+  }
+}
+
+.copyright {
+  min-width: 350px;
+  color: $color_gray_middle !important;
+  font-size: 12px;
+  opacity: 0.5;
+  font-family: $font-family_light;
+}
+
+.logo_footer {
+  width: 140px;
+}
+
+.social_svg {
+  height: 15px;
+  max-width: 15px;
+}
