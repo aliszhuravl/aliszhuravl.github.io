@@ -7,3 +7,4 @@
 //= parts/_fancybox.js
 //= parts/_accordion.js
 //= parts/_dropdown.js
+//= parts/_tabs.js

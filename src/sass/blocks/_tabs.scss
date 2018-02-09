@@ -1,0 +1,39 @@
+.tabs__item {
+  display: none;
+
+  &.active {
+    display: block;
+    color: $color-black;
+  }
+}
+
+.tabs {
+  margin-left: 122px;
+  .good_docs {
+    margin-left: 0;
+  }
+}
+
+.tabs__buttons {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 20px;
+    li {
+      cursor: pointer;
+      font-size: 22px;
+      font-family: $font-family_medium;
+      color: $color_gray-middle;
+      &:last-child {
+        margin-left: 8px;
+      }
+      span {
+        color: $color-black;
+      }
+    }
+}
+
+.tabs__btn_active {
+  color: $color-black !important;
+}
