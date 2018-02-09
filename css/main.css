@@ -5015,6 +5015,52 @@ ol li::before {
 	background: url('../img/catalog/3.png') no-repeat, url('../img/svg/polygray-y.png') no-repeat 60px 145px;
 }
 
+.tabs__item {
+	display: none;
+}
+
+.tabs__item.active {
+	display: block;
+	color: #000;
+}
+
+.tabs {
+	margin-left: 122px;
+}
+
+.tabs .good_docs {
+	margin-left: 0;
+}
+
+.tabs__buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tabs__buttons li {
+	font-family: 'DinProMedium', 'Arial', serif;
+	font-size: 22px;
+	cursor: pointer;
+	color: #9f9f9f;
+}
+
+.tabs__buttons li:last-child {
+	margin-left: 8px;
+}
+
+.tabs__buttons li span {
+	color: #000;
+}
+
+.tabs__btn_active {
+	color: #000 !important;
+}
+
 .clearfix:before,
 .clearfix:after {
 	display: table;
