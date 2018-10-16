@@ -2723,7 +2723,7 @@ html.fp-enabled,
 
 @media (max-width: 1290px) {
 
-.sir_content__text {
+.main_section .sir_content__text {
 	margin-left: 100px;
 	padding-right: 20px !important;
 }
