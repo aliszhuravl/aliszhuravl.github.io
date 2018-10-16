@@ -93,12 +93,26 @@ var fullpageInit = false;
         navigationPosition: 'left',
         afterLoad: function() {
             fullpageInit = true;
+        },
+        onLeave: function(index, nextIndex, direction){
+            if (direction == 'down') {
+                $('.cover-animation').addClass('cover-action');
+                setTimeout(function() {
+                    $('.cover-animation').removeClass('cover-action');
+                }, 1100);
+            }
+            if (direction == 'up') {
+                $('.cover-animation').addClass('cover-action');
+                setTimeout(function() {
+                    $('.cover-animation').removeClass('cover-action');
+                }, 1100);
+            }
         }
         // onLeave: function(index, nextIndex, direction){
         //
         // }
     });
-    // $.fn.fullpage.setAllowScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false);
 // }
 
 
@@ -136,4 +150,11 @@ $('.hamburger').on('click', function () {
         $('.sir_content').addClass('content_closed');
         $('.number').addClass('num_active');
     }
+});
+
+$('.link_menu').on('click', function () {
+    $('.hamburger').removeClass('hamburger_active');
+    $('.menu').removeClass('menu_active');
+    $('.sir_content').removeClass('content_closed');
+    $('.number').removeClass('num_active');
 });
