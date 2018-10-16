@@ -4,4 +4,4 @@
 <br>
 <p>В будущем будет играть роль персонального сайта. Пока что в процессе создания</p>
 
-<a href="https://aliszhuravl.github.io/web/index.html">(!) Смотреть на разрешении не меньше 1440, проект ещё совсем сырой!</a>
+<a href="https://aliszhuravl.github.io/web/index.html">(!) проект ещё совсем сырой!</a>
