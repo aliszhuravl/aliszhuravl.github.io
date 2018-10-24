@@ -82,6 +82,12 @@ window.onload = function() {
 })(jQuery);
 var fullpageInit = false;
 
+
+var mediaCheckMobile = window.matchMedia('(max-width: 640px)');
+var mediaCheckTablet = window.matchMedia('(min-width: 641px) and (max-width: 1199px)');
+var mediaCheckDesktop = window.matchMedia('(min-width: 1200px)');
+var viewport = document.getElementById('viewport');
+
 // function fullpageSettings() {
 
     $('#fullpage').fullpage({
@@ -118,26 +124,26 @@ var fullpageInit = false;
 
 
 
-// if ( $('.page-container').hasClass('page-main') ) {
-//
-//     $(window).on('load resize', function () {
-//
-//         if (mediaCheckDesktop.matches) {
-//
-//             if (!fullpageInit) {
-//                 fullpageSettings();
-//                 $.fn.fullpage.reBuild();
-//             }
-//         } else if ((mediaCheckMobile.matches) || (mediaCheckTablet.matches)) {
-//
-//             if (fullpageInit) {
-//                 fullpageInit = false;
-//                 $.fn.fullpage.destroy('all');
-//             }
-//
-//         }
-//     });
-// }
+if ( $('.page-container').hasClass('page-main') ) {
+
+    $(window).on('load resize', function () {
+
+        if (mediaCheckDesktop.matches) {
+
+            if (!fullpageInit) {
+                fullpageSettings();
+                $.fn.fullpage.reBuild();
+            }
+        } else if ((mediaCheckMobile.matches) || (mediaCheckTablet.matches)) {
+
+            if (fullpageInit) {
+                fullpageInit = false;
+                $.fn.fullpage.destroy('all');
+            }
+
+        }
+    });
+}
 $('.hamburger').on('click', function () {
     if ( $(this).hasClass('hamburger_active') ) {
         $(this).removeClass('hamburger_active');
