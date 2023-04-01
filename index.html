@@ -5,201 +5,293 @@
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>vero.team — digital агентство</title>
+    <title>purologico — дизайн и разработка</title>
 </head>
 <body>
+<div id="preloader" class="preloader active_load">
+    <div class="load_line">
+        <div class="load_line__inner" id="loader"></div>
+    </div>
+</div>
 <div class="page-container page-main">
     <header class="header">
         <div class="header__inner">
             <div class="menu">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='desktop' href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='mobile' href="index.html"><img src="img/lm.svg" alt="#"></a>
                 </div>
-                <div class="show">
-                    <p class="show_button">Showreel <img src="img/play.svg" alt="#"></p>
+                <div class="burger">
+                    <button class="hamburger" id="burger">
+                        <span></span>
+                    </button>
                 </div>
-                <div class="menu_vertical">
+                <div class="menu_horizontal">
                     <ul class="list">
-                        <li><a href="about.html" class="link link_menu">About us</a></li>
-                        <li><a href="services.html" class="link link_menu">Services</a></li>
-                        <li><a href="cases.html" class="link link_menu">Cases</a></li>
-                        <li><a href="contact.html" class="link link_menu">Contacts</a></li>
+                        <li><a href="cases.html" class="link link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link link_menu">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="contact">
-                    <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                    <a class="link_bold link" href="mailto:alis.zhuravl@icloud.com">alis.zhuravl@icloud.com</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <ul class="links_list mobile">
+                        <li><a href="index.html" class="link_menu">Главная</a></li>
+                        <li><a href="cases.html" class="link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link_menu">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="page">
         <div class="page__inner">
             <section class="page__item hero_block">
                 <div class="hero_block__container">
-
                     <div class="hero desktop">
                         <div class="img_container">
-                            <img class='desktop' src="img/main.svg" alt="#">
-                            <div class="reel_box">
-                                    <a href="#"><img src="img/reel.gif" alt="#"></a>
-                            </div>
+                            <img class="hero_img desktop-img light_theme" src="img/main.svg" alt="">
+                            <img class="hero_img desktop-img dark_img" src="img/main_dark.svg" alt="">
+                            <img class="hero_img tablet light_theme" src="img/main_m.svg" alt="">
+                            <img class="main_star light_theme" src="img/logo2.gif" alt="">
+                            <img class="main_star dark_img" src="img/00.gif" alt="">
+                            <div class="hero_services">[ дизайн<br>
+                                сайты<br>
+                                приложения ]</div>
+                            <!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>-->
+                            <!--<lottie-player class="animation_box" src="https://assets3.lottiefiles.com/packages/lf20_bt5q6j0d.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>-->
                         </div>
-
-                        <div class="main_text">
-                            <p>Мы — творческая команда дизайнеров, разработчиков и стратегов, создающих веб-сайты на высоте.</p>
-                        </div>
-                    </div>
-
-                    <div class="hero mobile">
-                        <img class="hero_img" src="img/main_mobile.svg" alt="">
-                        <div class="reel">
-                            <div class="reel_icon">
-                                <a href="#"><img src="img/reel.gif" alt="#"></a>
+                        <div class="main_text gb_animate">
+                            <div class="main_text__inner">
+                                <p>PUROLOGICO — это креативное агентство, сфокусированное на создании продуманных, функциональных и,  конечно же, красивых решений.</p>
                             </div>
-                            <div class="descr">
-                                <p>Мы творческая команда дизайнеров, разработчиков, стратегов и продюсеров, создающих веб-сайты на высоте.</p>
+                            <div class="main_links">
+                                <a href="#" class="btn">Почему розовый?</a>
+                                <a href="about.html" class="btn">Подробнее <img src="img/arr.svg" alt="#"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="page__item">
-                <div class="services">
-                    <div class="left">
-                        <h2>Мы создаем</h2>
+            <div class="divider gb_animate"></div>
+            <section class="page__item second_item gb_animate">
+                <div class="adv_block">
+                    <div class="adv_block__item">
+                        <p class="adv_block__item_img">
+
+                            <svg width="127" height="71" viewBox="0 0 127 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.531002 64.1006L0.518115 52.5176L34.3619 39.7089L34.3609 38.8179L0.488598 25.9856L0.475821 14.5016L53.463 34.4407L53.4737 44.0437L0.531002 64.1006Z" fill="#363636"/>
+                                <path d="M93.2895 70.4324C86.0295 70.4405 79.8904 69.4573 74.8722 67.4829C69.854 65.5084 66.0891 62.9056 63.5775 59.6744C61.1318 56.3771 59.907 52.8805 59.9028 49.1845C59.8992 45.9505 60.5889 42.9137 61.9717 40.0742C63.4206 37.2346 65.4632 34.2293 68.0997 31.0584L94.1023 0.141425L110.14 0.123582L86.6094 28.0678L86.6099 28.5628C87.2036 28.2981 88.2594 28.0659 89.7771 27.8663C91.2949 27.6666 93.0438 27.5656 95.0238 27.5634C101.822 27.5559 107.598 28.5394 112.352 30.5141C117.106 32.4889 120.673 35.1249 123.053 38.4222C125.433 41.6536 126.624 45.2163 126.629 49.1103C126.633 52.8063 125.383 56.3057 122.878 59.6084C120.44 62.8452 116.714 65.4563 111.7 67.4419C106.686 69.4275 100.549 70.4243 93.2895 70.4324ZM93.2774 59.5424C97.3694 59.5378 100.801 59.006 103.572 57.9469C106.408 56.8878 108.519 55.5324 109.903 53.8809C111.287 52.2293 111.978 50.5126 111.976 48.7306C111.974 46.9486 111.279 45.2333 109.892 43.5849C108.504 41.9364 106.39 40.5858 103.551 39.5329C100.778 38.48 97.3454 37.9558 93.2534 37.9604C89.1614 37.9649 85.697 38.4968 82.8601 39.556C80.0893 40.615 78.0118 41.9704 76.6277 43.6219C75.2435 45.2734 74.5524 46.9902 74.5544 48.7722C74.5564 50.5542 75.2513 52.2694 76.6391 53.9179C78.027 55.5663 80.1075 56.917 82.8806 57.9699C85.7198 59.0228 89.1854 59.5469 93.2774 59.5424Z" fill="#363636"/>
+                            </svg>
+
+                        </p>
+                        <div class="hidden_surprize">
+                            <img src="img/1.gif" alt="">
+                        </div>
+                        <p class="adv_block__item_p">лет — мой опыт работы в IT индустрии дизайнером и разработчиком</p>
                     </div>
-                    <div class="right">
-                        <ul class="links_block">
-                            <li class="links_block__item animated-button thar-three"><span>Промо-сайты</span></li>
-                            <li class="links_block__item animated-button thar-three"><span>Корпоративные сайты</span></li>
-                            <li class="links_block__item animated-button thar-three"><span>Интернет-магазины</span></li>
-                            <li class="links_block__item animated-button thar-three"><span>Креативные решения</span></li>
-                        </ul>
+                    <div class="adv_block__item">
+                        <p class="adv_block__item_img">
+
+                            <svg width="216" height="72" viewBox="0 0 216 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.531127 65.1006L0.51824 53.5176L34.362 40.7089L34.361 39.8179L0.488722 26.9856L0.475946 15.5016L53.4632 35.4407L53.4739 45.0437L0.531127 65.1006Z" fill="#363636"/>
+                                <path d="M92.2006 71.4336C85.9966 71.4405 80.2868 70.6878 75.0711 69.1756C69.9214 67.6634 66.0256 66.0177 63.3836 64.2387L63.3693 51.3687C66.1436 53.4776 70.0068 55.4203 74.9588 57.1968C79.9107 58.9073 85.1916 59.7594 90.8016 59.7531C95.0916 59.7484 98.688 59.2164 101.591 58.1571C104.494 57.0979 106.637 55.7425 108.021 54.091C109.406 52.4394 110.097 50.6567 110.094 48.7427C110.092 46.8947 109.397 45.1464 108.01 43.498C106.688 41.7835 104.64 40.3997 101.867 39.3468C99.1598 38.2938 95.7932 37.7696 91.7672 37.7741C87.9392 37.7783 84.6068 38.31 81.7699 39.3692C78.9991 40.4283 77.0535 41.6184 75.9329 42.9397L64.8449 42.952L67.6694 1.17084L119.941 1.11269L119.955 13.4877L79.5632 13.5326L78.3956 31.8489L78.8906 31.8484C80.1436 30.989 82.1558 30.2277 84.927 29.5647C87.7643 28.9015 91.0309 28.5679 94.7269 28.5638C101.063 28.5567 106.476 29.5407 110.966 31.5157C115.522 33.4246 118.957 35.9948 121.271 39.2262C123.584 42.4577 124.743 45.9874 124.748 49.8154C124.752 53.6434 123.535 57.2087 121.097 60.5114C118.658 63.7482 114.965 66.3923 110.017 68.4438C105.136 70.4292 99.1966 71.4258 92.2006 71.4336Z" fill="#363636"/>
+                                <path d="M175.308 71.3411C167.322 71.35 160.225 69.7739 154.018 66.6128C147.876 63.4516 143.119 59.1669 139.747 53.7587C136.375 48.3504 134.686 42.3463 134.678 35.7463C134.671 29.1463 136.347 23.1385 139.707 17.7227C143.067 12.307 147.815 8.01168 153.949 4.83685C160.149 1.66195 167.243 0.0700622 175.229 0.0611775C183.215 0.0522928 190.278 1.62843 196.42 4.7896C202.627 7.9507 207.417 12.2354 210.789 17.6436C214.161 23.0519 215.851 29.056 215.858 35.656C215.866 42.256 214.189 48.2639 210.829 53.6796C207.469 59.0953 202.689 63.3907 196.489 66.5656C190.354 69.7404 183.294 71.3322 175.308 71.3411ZM175.295 59.6591C180.377 59.6535 184.897 58.6255 188.855 56.5751C192.812 54.4587 195.845 51.5843 197.953 47.9519C200.127 44.3195 201.211 40.2263 201.206 35.6723C201.201 31.1183 200.108 27.0275 197.926 23.3999C195.81 19.7723 192.77 16.9377 188.808 14.8961C184.846 12.7885 180.324 11.7375 175.242 11.7432C170.16 11.7488 165.64 12.8099 161.682 14.9263C157.724 16.9767 154.659 19.8181 152.485 23.4505C150.377 27.0828 149.325 31.176 149.33 35.73C149.335 40.284 150.396 44.3748 152.512 48.0025C154.694 51.6301 157.766 54.4976 161.729 56.6052C165.691 58.6468 170.213 59.6648 175.295 59.6591Z" fill="#363636"/>
+                            </svg>
+
+                        </p>
+                        <div class="hidden_surprize">
+                            <img src="img/3.gif" alt="">
+                        </div>
+                        <p class="adv_block__item_p">успешно выполненных проектов и довольных клиентов</p>
                     </div>
                 </div>
             </section>
             <section class="page__item">
-                <div class="section_header">
-                    <h2>Портфолио</h2>
+                <div class="section_header gb_animate">
+                    <h2>моё портфолио</h2>
                 </div>
                 <div class="cases_block">
-                    <div class="cases_block__item">
+                    <div class="cases_block__item gb_animate">
                     <div class="left">
                         <div class="case_info">
-                            <p class="case_name">Zelichonok.photo</p>
-                            <p class="case_text">
-                                Основной нашей задачей было создание нового сайта для фотографа, который бы полностью отражал её стиль и подход к работе.
+                            <p class="case_name">Сайт фотографа</p>
+                            <p class="case_works">
+                                / дизайн
                             </p>
+                            <p class="case_text">
+                                Our main task was to create a new site for the photographer, which would fully reflect her style and approach to work. </p>
                         </div>
-                        <div class="case_links">
-                            <a class='link_ellipse' href="https://www.behance.net/gallery/158853231/Photographers-Portfolio-Website-UIUX" target="_blank"><p>Behance</p><span class="hover_ellipse"></span></a>
-                            <a class='link_ellipse' href="alena.html"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
+                        <div class="arrow_box">
+                            <div class="btn"></div>
                         </div>
                     </div>
                     <div class="right">
                         <img src="img/case_020.jpg" alt="#" class="case_img_cover">
-                        <img src="img/case_02.jpg" alt="#" class="case_img case_img_back">
+                        <!--<img src="img/case_02.jpg" alt="#" class="case_img case_img_back">-->
                     </div>
                 </div>
-                    <div class="cases_block__item">
+                    <div class="cases_block__item gb_animate">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">Стройкомплекс</p>
+                                <p class="case_name">ЦветʼOk e-commerce</p>
                                 <p class="case_text">
-                                    Компания «Стройкомплекс» занимается проектированием и строительством жилой, коммерческой и государственной недвижимости.</p>
+                                    The company «Stroycomplex» is engaged in the design and construction of residential, commercial and government real estate.
+                                </p>
                             </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="https://www.behance.net/gallery/150950285/strojkompleks-korporativnyj-sajt-UIUX" target="_blank"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="stroycomplex.html"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
-                            </div>
+
                         </div>
                         <div class="right">
                             <img src="img/case_010.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_01.png" alt="#" class="case_img case_img_back">
+                            <!--<img src="img/case_01.png" alt="#" class="case_img case_img_back">-->
                         </div>
                     </div>
-                    <div class="cases_block__item">
+                    <div class="cases_block__item gb_animate">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">Dominov</p>
-                                <p class="case_text">The first step was to find common ground with the client with clear and selling marketing packaging.</p>
+                                <p class="case_name">MAIN bot</p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
                             </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="#"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="#"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
+
+                        </div>
+                        <div class="right">
+                            <img src="img/case_060.jpg" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_06.jpg" alt="#" class="case_img case_img_back">-->
+                        </div>
+                    </div>
+                    <div class="cases_block__item gb_animate">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">НТПК b2b</p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
                             </div>
+
                         </div>
                         <div class="right">
                             <img src="img/case_030.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_03.jpg" alt="#" class="case_img case_img_back">
+                            <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
                         </div>
                     </div>
-                    <div class="more_btn">
-                        <a href="cases.html" class="btn">Больше кейсов</a>
+                    <div class="more_btn gb_animate">
+                        <a href="cases.html" class="btn">Показать ещё</a>
                     </div>
                 </div>
 
             </section>
-            <section class="page__item">
-                <div class="image_item">
-                    <img class="desktop" src="img/rost.svg" alt="#">
-                    <img class="mobile" src="img/we_mobile.svg" alt="#">
-                </div>
-                <div class="adv_block">
-                    <div class="adv_block__item">
-                        <p class="adv_block__item_img"><img src="img/7.svg" alt="#"></p>
-                        <p class="adv_block__item_p">Более 7 лет работы на рынке IT-услуг</p>
-                    </div>
-                    <div class="adv_block__item">
-                        <p class="adv_block__item_img"><img src="img/22.svg" alt="#"></p>
-                        <p class="adv_block__item_p">Опытных специалистов в нашей команде</p>
-                    </div>
-                    <div class="adv_block__item">
-                        <p class="adv_block__item_img"><img src="img/200.svg" alt="#"></p>
-                        <p class="adv_block__item_p">Успешно выполненных проектов</p>
-                    </div>
-                </div>
-                <div class="partners_block">
-                    <p class="partners_block__text">Мы являемся сертифицированными партнерами крупнейших рекламных площадок и сервисов:</p>
-                    <div class="adv_block">
-                        <div class="adv_block__item">
-                            <p>1 °C Bitrix</p>
-                            <p>MailChimp</p>
-                        </div>
-                        <div class="adv_block__item">
-                            <p>Google AdWords</p>
-                            <p>amoCRM.</p>
-                        </div>
-                        <div class="adv_block__item">
-                            <p>Yandex.Direct</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="divider"></div>
 
+            <section class="page__item values gb_animate">
+                    <div class="section_header">
+                        <h2>мои ценности</h2>
+                    </div>
+                    <div class="values_container">
+                        <div class="values_container__item">
+                            <div class="hidden_surprize">
+                                <img src="img/7.gif" alt="">
+                            </div>
+                            <div class="values_container__item_point">
+                                <img src="img/010.svg" alt="">
+                            </div>
+                            <div class="values_container__item_text">
+                                <p class="value_name">Less is more</p>
+                                <p class="value_text">Меньше значит больше. Простыми словами — это органичный минимализм. Это касается не только дизайна, но и подхода в целом.</p>
+                            </div>
+                        </div>
+
+                        <div class="values_container__item">
+                            <div class="hidden_surprize">
+                                <img src="img/5.gif" alt="">
+                            </div>
+                            <div class="values_container__item_point">
+                                <img src="img/010.svg" alt="">
+                            </div>
+                            <div class="values_container__item_text">
+                                <p class="value_name">Важность бренда</p>
+                                <p class="value_text">Я не сторонник клишированных решений и не боюсь создавать новое, тем самым подчеркивая индивидуальность вашего бренда.</p>
+                            </div>
+                        </div>
+
+                        <div class="values_container__item" id="block">
+                            <div class="hidden_surprize">
+                                <img src="img/task.gif" alt="">
+                            </div>
+                            <div class="values_container__item_point">
+                                <img src="img/010.svg" alt="">
+                            </div>
+                            <div class="values_container__item_text">
+                                <p class="value_name">Решение задачи</p>
+                                <p class="value_text">Я не работаю по одной схеме со всеми проектами. Я решаю задачу каждого клиента с погружением в сферу деятельности и специфику бизнеса.</p>
+                            </div>
+                        </div>
+
+                        <div class="values_container__item">
+                            <div class="hidden_surprize">
+                                <img src="img/8.gif" alt="">
+                            </div>
+                            <div class="values_container__item_point">
+                                <img src="img/010.svg" alt="">
+                            </div>
+                            <div class="values_container__item_text">
+                                <p class="value_name">Логично и красиво</p>
+                                <p class="value_text">Я никогда не жертвую логикой и удобством ради хайпа на трендах. Моя задача — сделать качественный продукт, которым будет удобно пользоваться, и при этом он будет эстетичным.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <section class="page__item aboutme gb_animate">
+                <div class="section_header">
+                    <h2>обо мне</h2>
+                </div>
+                <div class="section_body">
+                    <div class="left">
+                        <p class="big_bold">Будем знакомы!</p>
+                        <div class="img_about mobile"><img src="img/me-mobile.png" alt=""></div>
+                        <p class="big_norm">Меня зовут Алиса и я являюсь «лицом» бренда Purologico, который неразрывно связан с моей профессиональной историей.</p>
+                        <p class="big_norm">Я владею двумя профессиями: UI/UX дизайнер
+                            и frontend разработчик веб-интерфейсов,
+                            и именно этот тандем позволяет мне создавать изначально грамотно продуманный, логичный
+                            и чистый продукт (как вы поняли, отсюда
+                            взялось название)</p>
+                        <a href="https://t.me/Alis_Sergeevich" class="btn">Мой телеграм</a>
+                    </div>
+                    <div class="right">
+                        <img src="img/me.png" alt="">
+                    </div>
+                </div>
             </section>
-            <section class="page__item">
+
+            <section class="page__item gb_animate">
                 <div class="section_header form_header">
-                    <h2>Стать клиентом</h2>
                 </div>
                 <div class="form">
                     <div class="form_left">
-                        <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                        <h2>Оставьте заявку, чтобы обсудить проект</h2>
+                        <a class="link_violet" href="https://t.me/Alis_Sergeevich">Напишите мне в Телеграм</a>
                     </div>
                     <div class="form_right">
                         <div class="form_right__fields">
                             <div class="field_bar">
-                                <p class="question">Мне нужно…</p>
+                                <p class="question">Мне нужен…</p>
                                 <div class="field_bar__items">
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Сайт «под ключ»</span>
+                                        <span class="form__checkbox_text">Только дизайн</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Только дизайн</span>
+                                        <span class="form__checkbox_text">Лендинг</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
@@ -207,12 +299,22 @@
                                         <span class="form__checkbox_text">Интернет-магазин</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Реклама</span>
+                                        <span class="form__checkbox_text">Промо-сайт</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
+                                        <span class="form__checkbox_indicator"></span>
+                                        <span class="form__checkbox_text">Корпоративный сайт</span>
+                                    </label>
+                                    <label class="inline-label form__checkbox check">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-5">
+                                        <span class="form__checkbox_indicator"></span>
+                                        <span class="form__checkbox_text">Другое</span>
+                                    </label>
+                                    <label class="inline-label form__checkbox check">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-6">
                                         <span class="form__checkbox_indicator"></span>
                                         <span class="form__checkbox_text">Я только спросить</span>
                                     </label>
@@ -229,27 +331,34 @@
                 </div>
             </section>
         </div>
+        <div class="theme-button">
+            <p>другая тема</p>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__inner">
             <div class="left">
-                <ul class="list">
-                    <li><a href="/about.html" class="big_link">Об агентстве</a></li>
-                    <li><a href="/cases.html" class="big_link">Кейсы</a></li>
+                <ul class="list links_footer">
+                    <li><a href="/cases.html" class="big_link">Портфолио</a></li>
+                    <li><a href="/about.html" class="big_link">Обо мне</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="social">
-                    <a href="https://vk.com/vero.team" class="img_link" target="_blank"><img src="img/vk.svg" alt="vk"></a>
+                    <a href="https://t.me/Alis_Sergeevich" class="link" target="_blank">Telegram</a>
+                    <a href="https://vk.com/purologico" class="link" target="_blank">VK</a>
+                    <a href="https://www.behance.net/aliszhurav8202" class="link" target="_blank">Behance</a>
+                    <a href="https://dribbble.com/aliszhuravl" class="link" target="_blank">Dribbble</a>
                 </div>
-                <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
-                <p class="cr">© 2023 vero.team</p>
+                <a class="link_violet" href="mailto:hello@vero.team">alis.zhuravl@icloud.com</a>
+                <p class="cr">© 2023 purologico</p>
             </div>
         </div>
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.viewportchecker.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

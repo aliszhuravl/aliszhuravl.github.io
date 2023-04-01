@@ -5,117 +5,162 @@
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>vero.team — digital агентство</title>
+    <title>Контакты</title>
 </head>
 <body>
-<div class="page-container page-main">
+<div class="page-container page-subpage">
     <header class="header">
         <div class="header__inner">
             <div class="menu">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='desktop' href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='mobile' href="index.html"><img src="img/lm.svg" alt="#"></a>
                 </div>
-                <div class="show">
-                    <p class="show_button">Showreel <img src="img/play.svg" alt="#"></p>
+                <div class="burger">
+                    <button class="hamburger" id="burger">
+                        <span></span>
+                    </button>
                 </div>
-                <div class="menu_vertical">
+                <div class="menu_horizontal">
                     <ul class="list">
-                        <li><a href="about.html" class="link link_menu">About us</a></li>
-                        <li><a href="services.html" class="link link_menu">Services</a></li>
-                        <li><a href="cases.html" class="link link_menu">Cases</a></li>
-                        <li><a href="contact.html" class="link link_menu">Contacts</a></li>
+                        <li><a href="cases.html" class="link link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link link_menu">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="contact">
-                    <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                    <a class="link_bold link" href="mailto:alis.zhuravl@icloud.com">alis.zhuravl@icloud.com</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <ul class="links_list mobile">
+                        <li><a href="index.html" class="link_menu">Главная</a></li>
+                        <li><a href="cases.html" class="link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link_menu">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="page">
         <div class="page__inner">
             <section class="page__item hero_block hero_contacts">
                 <div class="hero_block__container">
-                    <div class="hero desktop">
-                        <div class="img_container">
-                            <img class='desktop' src="img/contsct.svg" alt="#">
-                        </div>
-
-                        <div class="main_text">
-                            <p>Мы готовы вместе с вами обсуждать новые идеи и воплощать их в жизнь!</p>
-                        </div>
+                    <h1>Контакты</h1>
+                </div>
+            </section>
+            <section class="page__item cb">
+                <div class="contacts_box">
+                    <div class="contacts_box__item">
+                        <a href="https://t.me/Alis_Sergeevich" class="link" target="_blank">{ телеграм }</a>
+                    </div>
+                    <div class="contacts_box__item">
+                        <a href="https://vk.com/purologico" class="link" target="_blank">{ группа вк }</a>
+                    </div>
+                    <div class="contacts_box__item">
+                        <a href="https://www.behance.net/aliszhurav8202" class="link" target="_blank">{ behance }</a>
+                    </div>
+                    <div class="contacts_box__item">
+                        <a href="https://dribbble.com/aliszhuravl" class="link" target="_blank">{ dribbble }</a>
                     </div>
                 </div>
             </section>
             <section class="page__item">
-                <div class="form">
-                    <div class="form_left">
-                        <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                <section class="page__item gb_animate">
+                    <div class="section_header form_header">
                     </div>
-                    <div class="form_right">
-                        <div class="form_right__fields">
-                            <div class="field_bar">
-                                <p class="question">Мне нужно…</p>
-                                <div class="field_bar__items">
-                                    <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
-                                        <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Сайт «под ключ»</span>
-                                    </label>
-                                    <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
-                                        <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Только дизайн</span>
-                                    </label>
-                                    <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
-                                        <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Интернет-магазин</span>
-                                    </label>
-                                    <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
-                                        <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Реклама</span>
-                                    </label>
-                                    <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
-                                        <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Я только спросить</span>
-                                    </label>
+                    <div class="form">
+                        <div class="form_left">
+                            <h2>Оставьте заявку, чтобы обсудить проект</h2>
+                            <a class="link_violet" href="https://t.me/Alis_Sergeevich">Напишите мне в Телеграм</a>
+                        </div>
+                        <div class="form_right">
+                            <div class="form_right__fields">
+                                <div class="field_bar">
+                                    <p class="question">Мне нужен…</p>
+                                    <div class="field_bar__items">
+                                        <label class="inline-label form__checkbox check">
+                                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                            <span class="form__checkbox_indicator"></span>
+                                            <span class="form__checkbox_text">Только дизайн</span>
+                                        </label>
+                                        <label class="inline-label form__checkbox check">
+                                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
+                                            <span class="form__checkbox_indicator"></span>
+                                            <span class="form__checkbox_text">Лендинг</span>
+                                        </label>
+                                        <label class="inline-label form__checkbox check">
+                                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                            <span class="form__checkbox_indicator"></span>
+                                            <span class="form__checkbox_text">Интернет-магазин</span>
+                                        </label>
+                                        <label class="inline-label form__checkbox check">
+                                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
+                                            <span class="form__checkbox_indicator"></span>
+                                            <span class="form__checkbox_text">Промо-сайт</span>
+                                        </label>
+                                        <label class="inline-label form__checkbox check">
+                                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
+                                            <span class="form__checkbox_indicator"></span>
+                                            <span class="form__checkbox_text">Корпоративный сайт</span>
+                                        </label>
+                                        <label class="inline-label form__checkbox check">
+                                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-5">
+                                            <span class="form__checkbox_indicator"></span>
+                                            <span class="form__checkbox_text">Другое</span>
+                                        </label>
+                                        <label class="inline-label form__checkbox check">
+                                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-6">
+                                            <span class="form__checkbox_indicator"></span>
+                                            <span class="form__checkbox_text">Я только спросить</span>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="input_bar">
-                                <input type="text" class="form__item" placeholder="Ваше имя">
-                                <input type="text" class="form__item" placeholder="Email">
-                                <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
-                                <button class="btn">Отправить</button>
+                                <div class="input_bar">
+                                    <input type="text" class="form__item" placeholder="Ваше имя">
+                                    <input type="text" class="form__item" placeholder="Email">
+                                    <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                                    <button class="btn">Отправить</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </section>
         </div>
     </main>
     <footer class="footer">
         <div class="footer__inner">
             <div class="left">
-                <ul class="list">
-                    <li><a href="/about.html" class="big_link">Об агентстве</a></li>
-                    <li><a href="/cases.html" class="big_link">Кейсы</a></li>
+                <ul class="list links_footer">
+                    <li><a href="/cases.html" class="big_link">Портфолио</a></li>
+                    <li><a href="/about.html" class="big_link">Обо мне</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="social">
-                    <a href="https://vk.com/vero.team" class="img_link" target="_blank"><img src="img/vk.svg" alt="vk"></a>
+                    <a href="https://t.me/Alis_Sergeevich" class="link" target="_blank">Telegram</a>
+                    <a href="https://vk.com/purologico" class="link" target="_blank">VK</a>
+                    <a href="https://www.behance.net/aliszhurav8202" class="link" target="_blank">Behance</a>
+                    <a href="https://dribbble.com/aliszhuravl" class="link" target="_blank">Dribbble</a>
                 </div>
-                <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
-                <p class="cr">© 2023 vero.team</p>
+                <a class="link_violet" href="mailto:hello@vero.team">alis.zhuravl@icloud.com</a>
+                <p class="cr">© 2023 purologico</p>
             </div>
         </div>
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.viewportchecker.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

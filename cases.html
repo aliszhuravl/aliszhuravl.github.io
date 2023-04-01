@@ -5,219 +5,341 @@
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>vero.team — digital агентство</title>
+    <title>Моё портфолио</title>
 </head>
 <body>
-<div class="page-container page-main">
+<div class="page-container page-subpage">
     <header class="header">
         <div class="header__inner">
             <div class="menu">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='desktop' href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='mobile' href="index.html"><img src="img/lm.svg" alt="#"></a>
                 </div>
-                <div class="show">
-                    <p class="show_button">Showreel <img src="img/play.svg" alt="#"></p>
+                <div class="burger">
+                    <button class="hamburger" id="burger">
+                        <span></span>
+                    </button>
                 </div>
-                <div class="menu_vertical">
+                <div class="menu_horizontal">
                     <ul class="list">
-                        <li><a href="about.html" class="link link_menu">About us</a></li>
-                        <li><a href="services.html" class="link link_menu">Services</a></li>
-                        <li><a href="cases.html" class="link link_menu">Cases</a></li>
-                        <li><a href="contact.html" class="link link_menu">Contacts</a></li>
+                        <li><a href="cases.html" class="link link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link link_menu">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="contact">
-                    <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                    <a class="link_bold link" href="mailto:alis.zhuravl@icloud.com">alis.zhuravl@icloud.com</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <ul class="links_list mobile">
+                        <li><a href="index.html" class="link_menu">Главная</a></li>
+                        <li><a href="cases.html" class="link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link_menu">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="page">
         <div class="page__inner">
-            <section class="page__item hero_block hero_contacts">
+            <section class="page__item hero_block">
                 <div class="hero_block__container">
-                    <div class="hero desktop">
-                        <div class="img_container">
-                            <img class='desktop' src="img/cases.svg" alt="#">
-                            <div class="reel_box">
-                                <a href="#"><img src="img/reel.gif" alt="#"></a>
-                            </div>
-                        </div>
-
-                        <div class="main_text">
-                            <p>Мы — творческая команда дизайнеров, разработчиков и стратегов, создающих веб-сайты на высоте.</p>
-                        </div>
-                    </div>
+                    <h1>Моё портфолио</h1>
                 </div>
             </section>
             <section class="page__item">
                 <div class="cases_block">
                     <div class="cases_block__item">
+                    <div class="left">
+                        <div class="case_info">
+                            <p class="case_name">Брянский лес</p>
+                            <p class="case_works">
+                                / дизайн
+                            </p>
+                            <p class="case_text">
+                                Our main task was to create a new site for the photographer, which would fully reflect her style and approach to work.</p>
+                            <p class="case_tags">
+                                <span>#интерьер</span>
+                                <span>#двери</span>
+                                <span>#ecommerce</span>
+                            </p>
+                        </div>
+                        <div class="arrow_box">
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="img/case_00.png" alt="#" class="case_img_cover">
+                        <!--<img src="img/case_02.jpg" alt="#" class="case_img case_img_back">-->
+                    </div>
+                </div>
+                    <div class="cases_block__item">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">Zelichonok.photo</p>
+                                <p class="case_name">Сайт фотографа</p>
+                                <p class="case_works">
+                                    / дизайн
+                                </p>
                                 <p class="case_text">
-                                    Основной нашей задачей было создание нового сайта для фотографа, который бы полностью отражал её стиль и подход к работе.
+                                    Our main task was to create a new site for the photographer, which would fully reflect her style and approach to work.</p>
+
+                                <p class="case_tags">
+                                    <span>#портфолио</span>
+                                    <span>#фото</span>
+                                    <span>#промо-сайт</span>
                                 </p>
                             </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="https://www.behance.net/gallery/158853231/Photographers-Portfolio-Website-UIUX" target="_blank"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="alena.html"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
+                            <div class="arrow_box">
+                                <div class="btn"></div>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="img/case_020.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_02.jpg" alt="#" class="case_img case_img_back">
-                        </div>
-                    </div>
-
-                    <div class="cases_block__item">
-                        <div class="left">
-                            <div class="case_info">
-                                <p class="case_name">Стройкомплекс</p>
-                                <p class="case_text">
-                                    Компания «Стройкомплекс» занимается проектированием и строительством жилой, коммерческой и государственной недвижимости.</p>
-                            </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="https://www.behance.net/gallery/150950285/strojkompleks-korporativnyj-sajt-UIUX" target="_blank"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="stroycomplex.html"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="img/case_010.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_01.png" alt="#" class="case_img case_img_back">
-                        </div>
-                    </div>
-                    <div class="cases_block__item">
-                        <div class="left">
-                            <div class="case_info">
-                                <p class="case_name">Dominov</p>
-                                <p class="case_text">The first step was to find common ground with the client with clear and selling marketing packaging.</p>
-                            </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="#"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="#"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="img/case_030.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_03.jpg" alt="#" class="case_img case_img_back">
+                            <img src="img/case_01.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_02.jpg" alt="#" class="case_img case_img_back">-->
                         </div>
                     </div>
                     <div class="cases_block__item">
                         <div class="left">
                             <div class="case_info">
                                 <p class="case_name">Kommune DAO</p>
-                                <p class="case_text">The first step was to find common ground with the client with clear and selling marketing packaging.</p>
+                                <p class="case_works">
+                                    / дизайн
+                                </p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                                <p class="case_tags">
+                                    <span>#финансы</span>
+                                    <span>#крипто</span>
+                                    <span>#корпоративный сайт</span>
+                                </p>
                             </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="#"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="#"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
-                            </div>
+
                         </div>
                         <div class="right">
-                            <img src="img/case_04.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_040.jpg" alt="#" class="case_img case_img_back">
+                            <img src="img/case_010.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
                         </div>
                     </div>
                     <div class="cases_block__item">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">Scandi</p>
-                                <p class="case_text">The first step was to find common ground with the client with clear and selling marketing packaging.</p>
+                                <p class="case_name">ЦветʼOk e-commerce</p>
+                                <p class="case_works">
+                                    / дизайн / вёрстка
+                                </p>
+                                <p class="case_text">
+                                    The company «Stroycomplex» is engaged in the design and construction of residential, commercial and government real estate.
+                                </p>
+                                <p class="case_tags">
+                                    <span>#флористика</span>
+                                    <span>#цветы</span>
+                                    <span>#ecommerce</span>
+                                </p>
                             </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="#"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="#"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
-                            </div>
+
                         </div>
                         <div class="right">
-                            <img src="img/case_05.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_040.jpg" alt="#" class="case_img case_img_back">
+                            <img src="img/case_02.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_01.png" alt="#" class="case_img case_img_back">-->
                         </div>
                     </div>
                     <div class="cases_block__item">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">ЦветʼОК</p>
-                                <p class="case_text">The first step was to find common ground with the client with clear and selling marketing packaging.</p>
+                                <p class="case_name">MAIN bot</p>
+                                <p class="case_works">
+                                    / дизайн
+                                </p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                                <p class="case_tags">
+                                    <span>#финансы</span>
+                                    <span>#крипто</span>
+                                    <span>#телеграм-бот</span>
+                                </p>
                             </div>
-                            <div class="case_links">
-                                <a class='link_ellipse' href="#"><p>Behance</p><span class="hover_ellipse"></span></a>
-                                <a class='link_ellipse' href="#"><p>Смотреть кейс</p><span class="hover_ellipse"></span></a>
-                            </div>
+
                         </div>
                         <div class="right">
-                            <img src="img/case_06.jpg" alt="#" class="case_img_cover">
-                            <img src="img/case_060.jpg" alt="#" class="case_img case_img_back">
+                            <img src="img/case_03.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_06.jpg" alt="#" class="case_img case_img_back">-->
                         </div>
                     </div>
+                    <div class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">НТПК b2b</p>
+                                <p class="case_works">
+                                    / дизайн / вёрстка
+                                </p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                                <p class="case_tags">
+                                    <span>#жд-пути</span>
+                                    <span>#промышленность</span>
+                                    <span>#b2b e-commerce</span>
+                                </p>
+                            </div>
 
-                    <div class="more_btn">
-                        <a href="cases.html" class="btn">Больше кейсов</a>
+                        </div>
+                        <div class="right">
+                            <img src="img/case_04.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
+                        </div>
+                    </div>
+                    <div class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">MOOVE by Skolkovo bot</p>
+                                <p class="case_works">
+                                    / дизайн
+                                </p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                                <p class="case_tags">
+                                    <span>#стартапы</span>
+                                    <span>#бизнес</span>
+                                    <span>#телеграм-бот</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <img src="img/case_03.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_06.jpg" alt="#" class="case_img case_img_back">-->
+                        </div>
+                    </div>
+                    <div class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">Специальное промышленное снабжение</p>
+                                <p class="case_works">
+                                    / дизайн / вёрстка
+                                </p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                                <p class="case_tags">
+                                    <span>#импортозамещение</span>
+                                    <span>#промышленность</span>
+                                    <span>#b2b</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <img src="img/case_05.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
+                        </div>
+                    </div>
+                    <div class="cases_block__item">
+                    <div class="left">
+                        <div class="case_info">
+                            <p class="case_name">Арт-Картель</p>
+                            <p class="case_works">
+                                / дизайн
+                            </p>
+                            <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                            <p class="case_tags">
+                                <span>#выставки</span>
+                                <span>#стенды</span>
+                                <span>#b2b</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <img src="img/case_06.png" alt="#" class="case_img_cover">
+                        <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
+                    </div>
+                </div>
+                    <div class="cases_block__item">
+                    <div class="left">
+                        <div class="case_info">
+                            <p class="case_name">Swiss Autonomus Valley</p>
+                            <p class="case_works">
+                                / дизайн / вёрстка
+                            </p>
+                            <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                            <p class="case_tags">
+                                <span>#смарт-технологии</span>
+                                <span>#стартапы</span>
+                                <span>#промо-сайт</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <img src="img/case_07.png" alt="#" class="case_img_cover">
+                        <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
+                    </div>
+                </div>
+                    <div class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">Co-19 & Me</p>
+                                <p class="case_works">
+                                    / дизайн / вёрстка
+                                </p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                                <p class="case_tags">
+                                    <span>#медицина</span>
+                                    <span>#трекинг_здоровья</span>
+                                    <span>#промо-сайт</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <img src="img/case_08.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
+                        </div>
+                    </div>
+                    <div class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">Атлант</p>
+                                <p class="case_works">
+                                    / дизайн
+                                </p>
+                                <p class="case_text">Dominov is a company producing modular houses for year-round living. Our main task was to create a clear and stylish presentation for a company producing modular houses, bathhouses, gazebos and sheds.</p>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <img src="img/case_09.png" alt="#" class="case_img_cover">
+                            <!--<img src="img/case_03.jpg" alt="#" class="case_img case_img_back">-->
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="page__item">
-                <div class="image_item">
-                    <img class="desktop" src="img/rost.svg" alt="#">
-                    <img class="mobile" src="img/we_mobile.svg" alt="#">
-                </div>
-                <div class="adv_block">
-                    <div class="adv_block__item">
-                        <p class="adv_block__item_img"><img src="img/7.svg" alt="#"></p>
-                        <p class="adv_block__item_p">Более 7 лет работы на рынке IT-услуг</p>
-                    </div>
-                    <div class="adv_block__item">
-                        <p class="adv_block__item_img"><img src="img/22.svg" alt="#"></p>
-                        <p class="adv_block__item_p">Опытных специалистов в нашей команде</p>
-                    </div>
-                    <div class="adv_block__item">
-                        <p class="adv_block__item_img"><img src="img/200.svg" alt="#"></p>
-                        <p class="adv_block__item_p">Успешно выполненных проектов</p>
-                    </div>
-                </div>
-                <div class="partners_block">
-                    <p class="partners_block__text">Мы являемся сертифицированными партнерами крупнейших рекламных площадок и сервисов:</p>
-                    <div class="adv_block">
-                        <div class="adv_block__item">
-                            <p>1 °C Bitrix</p>
-                            <p>MailChimp</p>
-                        </div>
-                        <div class="adv_block__item">
-                            <p>Google AdWords</p>
-                            <p>amoCRM.</p>
-                        </div>
-                        <div class="adv_block__item">
-                            <p>Yandex.Direct</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="divider"></div>
 
-            </section>
-            <section class="page__item">
+            <section class="page__item gb_animate">
                 <div class="section_header form_header">
-                    <h2>Стать клиентом</h2>
                 </div>
                 <div class="form">
                     <div class="form_left">
-                        <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                        <h2>Оставьте заявку, чтобы обсудить проект</h2>
+                        <a class="link_violet" href="https://t.me/Alis_Sergeevich">Напишите мне в Телеграм</a>
                     </div>
                     <div class="form_right">
                         <div class="form_right__fields">
                             <div class="field_bar">
-                                <p class="question">Мне нужно…</p>
+                                <p class="question">Мне нужен…</p>
                                 <div class="field_bar__items">
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Сайт «под ключ»</span>
+                                        <span class="form__checkbox_text">Только дизайн</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Только дизайн</span>
+                                        <span class="form__checkbox_text">Лендинг</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
@@ -225,12 +347,22 @@
                                         <span class="form__checkbox_text">Интернет-магазин</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Реклама</span>
+                                        <span class="form__checkbox_text">Промо-сайт</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
+                                        <span class="form__checkbox_indicator"></span>
+                                        <span class="form__checkbox_text">Корпоративный сайт</span>
+                                    </label>
+                                    <label class="inline-label form__checkbox check">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-5">
+                                        <span class="form__checkbox_indicator"></span>
+                                        <span class="form__checkbox_text">Другое</span>
+                                    </label>
+                                    <label class="inline-label form__checkbox check">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-6">
                                         <span class="form__checkbox_indicator"></span>
                                         <span class="form__checkbox_text">Я только спросить</span>
                                     </label>
@@ -247,27 +379,34 @@
                 </div>
             </section>
         </div>
+        <div class="theme-button">
+            <p>другая тема</p>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__inner">
             <div class="left">
-                <ul class="list">
-                    <li><a href="/about.html" class="big_link">Об агентстве</a></li>
-                    <li><a href="/cases.html" class="big_link">Кейсы</a></li>
+                <ul class="list links_footer">
+                    <li><a href="/cases.html" class="big_link">Портфолио</a></li>
+                    <li><a href="/about.html" class="big_link">Обо мне</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="social">
-                    <a href="https://vk.com/vero.team" class="img_link" target="_blank"><img src="img/vk.svg" alt="vk"></a>
+                    <a href="https://t.me/Alis_Sergeevich" class="link" target="_blank">Telegram</a>
+                    <a href="https://vk.com/purologico" class="link" target="_blank">VK</a>
+                    <a href="https://www.behance.net/aliszhurav8202" class="link" target="_blank">Behance</a>
+                    <a href="https://dribbble.com/aliszhuravl" class="link" target="_blank">Dribbble</a>
                 </div>
-                <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
-                <p class="cr">© 2023 vero.team</p>
+                <a class="link_violet" href="mailto:hello@vero.team">alis.zhuravl@icloud.com</a>
+                <p class="cr">© 2023 purologico</p>
             </div>
         </div>
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.viewportchecker.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

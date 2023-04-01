@@ -5,169 +5,163 @@
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>vero.team — digital агентство</title>
+    <title>Услуги и цены</title>
 </head>
 <body>
-<div class="page-container page-main">
+<div class="page-container page-subpage">
     <header class="header">
         <div class="header__inner">
             <div class="menu">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='desktop' href="index.html"><img src="img/logo.svg" alt="#"></a>
+                    <a class='mobile' href="index.html"><img src="img/lm.svg" alt="#"></a>
                 </div>
-                <div class="show">
-                    <p class="show_button">Showreel <img src="img/play.svg" alt="#"></p>
+                <div class="burger">
+                    <button class="hamburger" id="burger">
+                        <span></span>
+                    </button>
                 </div>
-                <div class="menu_vertical">
+                <div class="menu_horizontal">
                     <ul class="list">
-                        <li><a href="about.html" class="link link_menu">About us</a></li>
-                        <li><a href="services.html" class="link link_menu">Services</a></li>
-                        <li><a href="cases.html" class="link link_menu">Cases</a></li>
-                        <li><a href="contact.html" class="link link_menu">Contacts</a></li>
+                        <li><a href="cases.html" class="link link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link link_menu">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="contact">
-                    <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                    <a class="link_bold link" href="mailto:alis.zhuravl@icloud.com">alis.zhuravl@icloud.com</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <ul class="links_list mobile">
+                        <li><a href="index.html" class="link_menu">Главная</a></li>
+                        <li><a href="cases.html" class="link_menu">Портфолио</a></li>
+                        <li><a href="services.html" class="link_menu">Услуги</a></li>
+                        <li><a href="about.html" class="link_menu">Обо мне</a></li>
+                        <li><a href="contact.html" class="link_menu">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="page">
         <div class="page__inner">
-            <section class="page__item hero_block hero_contacts">
+            <section class="page__item hero_block">
                 <div class="hero_block__container">
-                    <div class="hero desktop">
-                        <div class="img_container">
-                            <img class='desktop' src="img/about.svg" alt="#">
-                        </div>
-                        <div class="main_text">
-                            <p>Мы — творческая команда дизайнеров, разработчиков и стратегов, создающих веб-сайты на высоте.</p>
-                        </div>
-                    </div>
-                    <div class="hero mobile">
-                        <img class="hero_img" src="img/about_m.svg" alt="">
-                        <div class="reel">
-                            <div class="descr">
-                                <p>Мы творческая команда дизайнеров, разработчиков, стратегов и продюсеров, создающих веб-сайты на высоте.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h1>услуги и цены</h1>
                 </div>
             </section>
+
             <section class="page__item">
                 <div class="cases_block serv_block">
-                    <a href="design.html" class="cases_block__item">
+                    <div class="cases_block__item">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">Дизайн</p>
+                                <p class="case_name">UI/UX дизайн сайтов, веб-сервисов и приложений</p>
                                 <p class="case_text">
-                                    The first step was to find common ground with the client with clear and selling marketing packaging.
+                                    Продумывание логики взаимодействия, проектирование интерфейса, отрисовка прототипа, отрисовка дизайна и адаптивной версии для любых устройств.
                                 </p>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="img/arr.svg" alt="">
+                            <span>от 30.000</span>
                         </div>
-                    </a>
-                    <a href="develop.html" class="cases_block__item">
+                    </div>
+                    <div class="cases_block__item">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">Веб‑разработка</p>
+                                <p class="case_name">Адаптивная вёрстка сайтов, веб-сервисов и приложений</p>
                                 <p class="case_text">
-                                    The first step was to find common ground with the client with clear and selling marketing packaging.
+                                    Чистая и аккуратная вёрстка проекта с понятной структурой и на все разрешения экранов с использованием инструментов HTML5, Sass, JS, сборка проекта Gulp4.
                                 </p>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="img/arr.svg" alt="">
+                            <span>от 30.000</span>
                         </div>
-                    </a>
-                    <a href="merketing.html" class="cases_block__item">
+                    </div>
+                    <div class="cases_block__item">
                         <div class="left">
                             <div class="case_info">
-                                <p class="case_name">Маркетинг</p>
+                                <p class="case_name">Интернет-магазины</p>
                                 <p class="case_text">
-                                    The first step was to find common ground with the client with clear and selling marketing packaging.
+                                    Дизайн и вёрстка интернет-магазинов любой сложности, b2b и b2c. В начальную стоимость входит дизайн + вёрстка, более точную оценку проекта смогу сдать после изучения технического задания.
                                 </p>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="img/arr.svg" alt="">
+                            <span>от 80.000</span>
+                        </div>
+                    </div>
+                    <a class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">Корпоративные и промо-сайты</p>
+                                <p class="case_text">
+                                    Дизайн и вёрстка корпоративный и промо-сайтов любой сложности. В начальную стоимость входит дизайн + вёрстка, более точную оценку проекта смогу сдать после изучения технического задания.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span>от 50.000</span>
                         </div>
                     </a>
-
-                </div>
-
-            </section>
-            <section class="page__item values">
-                <div class="section_header">
-                    <h2>Наши ценности</h2>
-                </div>
-                <div class="values_container">
-                    <div class="values_container__item">
-                        <div class="values_container__item_point">
-                            <img src="img/01.svg" alt="">
+                    <div class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">Одностраничные сайты и лендинги</p>
+                                <p class="case_text">
+                                    Дизайн и вёрстка одностраничных сайтов и лендингов любой сложности. В начальную стоимость входит дизайн + вёрстка, более точную оценку проекта смогу сдать после изучения технического задания.
+                                </p>
+                            </div>
                         </div>
-                        <div class="values_container__item_text">
-                            <p class="value_name">Less is more</p>
-                            <p class="value_text">Меньше значит больше. Простыми словами — это органичный минимализм. Это касается не только дизайна, но и подхода в целом.</p>
+                        <div class="right">
+                            <span>от 30.000</span>
                         </div>
                     </div>
-
-                    <div class="values_container__item">
-                        <div class="values_container__item_point">
-                            <img src="img/02.svg" alt="">
+                    <div class="cases_block__item">
+                        <div class="left">
+                            <div class="case_info">
+                                <p class="case_name">Презентации</p>
+                                <p class="case_text">
+                                    Дизайн презентаций, маркетинг-китов и другой графики любой сложности. В начальную стоимость входит дизайн, более точную оценку проекта смогу сдать после изучения технического задания.
+                                </p>
+                            </div>
                         </div>
-                        <div class="values_container__item_text">
-                            <p class="value_name">Важность бренда</p>
-                            <p class="value_text">Мы не сторонники клишированных решений и не боимся создавать новое, тем самым подчеркивая индивидуальность вашего бренда.</p>
-                        </div>
-                    </div>
-
-                    <div class="values_container__item">
-                        <div class="values_container__item_point">
-                            <img src="img/03.svg" alt="">
-                        </div>
-                        <div class="values_container__item_text">
-                            <p class="value_name">Мы решаем задачу</p>
-                            <p class="value_text">Мы не работаем по одной схеме. Мы решаем задачу каждого клиента с помощью тех инструментов, которые
-                                для этого требуются.</p>
-                        </div>
-                    </div>
-
-                    <div class="values_container__item">
-                        <div class="values_container__item_point">
-                            <img src="img/04.svg" alt="">
-                        </div>
-                        <div class="values_container__item_text">
-                            <p class="value_name">Команда</p>
-                            <p class="value_text">Мы — сильные и опытные профессионалы, понимающие важность взаимодействия с другими участниками проекта с самого начала для достижения лучшего результата.</p>
+                        <div class="right">
+                            <span>от 10.000</span>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="page__item">
+            <section class="page__item gb_animate">
                 <div class="section_header form_header">
-                    <h2>Стать клиентом</h2>
                 </div>
                 <div class="form">
                     <div class="form_left">
-                        <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
+                        <h2>Оставьте заявку, чтобы обсудить проект</h2>
+                        <a class="link_violet" href="https://t.me/Alis_Sergeevich">Напишите мне в Телеграм</a>
                     </div>
                     <div class="form_right">
                         <div class="form_right__fields">
                             <div class="field_bar">
-                                <p class="question">Мне нужно…</p>
+                                <p class="question">Мне нужен…</p>
                                 <div class="field_bar__items">
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Сайт «под ключ»</span>
+                                        <span class="form__checkbox_text">Только дизайн</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Только дизайн</span>
+                                        <span class="form__checkbox_text">Лендинг</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
                                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
@@ -175,12 +169,22 @@
                                         <span class="form__checkbox_text">Интернет-магазин</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
                                         <span class="form__checkbox_indicator"></span>
-                                        <span class="form__checkbox_text">Реклама</span>
+                                        <span class="form__checkbox_text">Промо-сайт</span>
                                     </label>
                                     <label class="inline-label form__checkbox check">
-                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
+                                        <span class="form__checkbox_indicator"></span>
+                                        <span class="form__checkbox_text">Корпоративный сайт</span>
+                                    </label>
+                                    <label class="inline-label form__checkbox check">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-5">
+                                        <span class="form__checkbox_indicator"></span>
+                                        <span class="form__checkbox_text">Другое</span>
+                                    </label>
+                                    <label class="inline-label form__checkbox check">
+                                        <input class="form__checkbox_hidden" type="checkbox" name="checkbox-6">
                                         <span class="form__checkbox_indicator"></span>
                                         <span class="form__checkbox_text">Я только спросить</span>
                                     </label>
@@ -197,27 +201,34 @@
                 </div>
             </section>
         </div>
+        <div class="theme-button">
+            <p>другая тема</p>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__inner">
             <div class="left">
-                <ul class="list">
-                    <li><a href="/about.html" class="big_link">Об агентстве</a></li>
-                    <li><a href="/cases.html" class="big_link">Кейсы</a></li>
+                <ul class="list links_footer">
+                    <li><a href="/cases.html" class="big_link">Портфолио</a></li>
+                    <li><a href="/about.html" class="big_link">Обо мне</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="social">
-                    <a href="https://vk.com/vero.team" class="img_link" target="_blank"><img src="img/vk.svg" alt="vk"></a>
+                    <a href="https://t.me/Alis_Sergeevich" class="link" target="_blank">Telegram</a>
+                    <a href="https://vk.com/purologico" class="link" target="_blank">VK</a>
+                    <a href="https://www.behance.net/aliszhurav8202" class="link" target="_blank">Behance</a>
+                    <a href="https://dribbble.com/aliszhuravl" class="link" target="_blank">Dribbble</a>
                 </div>
-                <a class="link_violet" href="mailto:hello@vero.team">hello@vero.team</a>
-                <p class="cr">© 2023 vero.team</p>
+                <a class="link_violet" href="mailto:hello@vero.team">alis.zhuravl@icloud.com</a>
+                <p class="cr">© 2023 purologico</p>
             </div>
         </div>
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.viewportchecker.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
