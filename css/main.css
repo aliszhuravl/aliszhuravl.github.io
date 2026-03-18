@@ -429,51 +429,65 @@ th {
 
 @font-face {
 	font-family: 'MontserratLight';
-	font-weight: 300;
+	font-weight: normal;
 	font-style: normal;
-	src: url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+	src: url('../fonts/Montserrat/Montserrat-Light.eot');
+	src: url('../fonts/Montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-Light.woff') format('woff'), url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	font-weight: 400;
+	font-weight: normal;
 	font-style: normal;
-	src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+	src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+	src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'MontserratMedium';
-	font-weight: 500;
-	font-style: italic;
-	src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+	src: url('../fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat-SemiBold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Montserrat/Montserrat-SemiBold.eot');
+	src: url('../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'MontserratItalic';
-	font-weight: 400;
+	font-weight: normal;
 	font-style: italic;
-	src: url('../fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+	src: url('../fonts/Montserrat/Montserrat-Italic.eot');
+	src: url('../fonts/Montserrat/Montserrat-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-Italic.woff') format('woff'), url('../fonts/Montserrat/Montserrat-Italic.woff2') format('woff2'), url('../fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'MontserratMediumItalic';
-	font-weight: 500;
+	font-weight: normal;
 	font-style: italic;
-	src: url('../fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
+	src: url('../fonts/Montserrat/Montserrat-MediumItalic.eot');
+	src: url('../fonts/Montserrat/Montserrat-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-MediumItalic.woff') format('woff'), url('../fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'MontserratLightItalic';
-	font-weight: 500;
+	font-weight: normal;
 	font-style: italic;
-	src: url('../fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype');
+	src: url('../fonts/Montserrat/Montserrat-LightItalic.eot');
+	src: url('../fonts/Montserrat/Montserrat-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-LightItalic.woff') format('woff'), url('../fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'kudryashev-headline';
-	font-weight: 500;
+	font-weight: normal;
 	font-style: italic;
-	src: url('../fonts/Kudryashev/kudryashev-headline-sans.ttf') format('truetype');
+	src: url('../fonts/Kudryashev/kudryashev-headline-sans.ttf') format('truetype'), url('../fonts/Kudryashev/KudryashevHeadline.woff') format('woff'), url('../fonts/Kudryashev/KudryashevHeadline.woff2') format('woff2');
 }
 
 @font-face {
@@ -552,7 +566,7 @@ a:hover {
 }
 
 h1 {
-	font-family: 'kudryashev-headline', 'Arial', serif;
+	font-family: 'kudryashev-headline', 'Arial', serif !important;
 	font-size: calc(64px + 44 * (100vw - 1199px) / 721);
 	font-weight: normal;
 	line-height: inherit;
@@ -1057,7 +1071,7 @@ h3 {
 }
 
 .nav__link {
-	font-family: 'AktivGroteskBold', 'Arial', serif;
+	font-family: 'Montserrat-SemiBold', 'Arial', serif;
 	padding: 15px;
 	text-decoration: none;
 }
@@ -3019,7 +3033,7 @@ body.change_theme .footer__inner .link_violet {
 }
 
 .text_bold {
-	font-family: 'AktivGroteskBold', 'Arial', serif;
+	font-family: 'Montserrat-SemiBold', 'Arial', serif;
 }
 
 .disabled {
